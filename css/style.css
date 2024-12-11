@@ -26,7 +26,7 @@ header {
 
 #coin {
     position: absolute;
-    top: -12.5px;
+    top: -22px;
     left: 800px;
     width: 225px;
 }
@@ -61,7 +61,7 @@ section {
     padding: 0.4cm;
     border-radius: 20px;
     display: flex;
-   justify-content: center;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
@@ -72,7 +72,7 @@ border-radius: 10px;
 }
 
 .image :hover {
-size: 110%;
+width: 500px;
 
 }
 
@@ -81,4 +81,72 @@ footer {
     background-color: #f0d689;
     padding: 0.4cm;
     border-radius: 20px;
+}
+
+
+#wrapper2 {
+    display: grid;
+    gap: 1%;
+    height: 750px;
+    grid-template-columns: 17% 1fr 17%;
+    grid-template-rows: 22% 1fr 17%;
+    grid-template-areas:
+        'hd hd hd hd'
+        'na se se se'
+        'bl se se se';
+    
+}
+
+
+.dissection{
+padding-bottom: -100px;
+display: grid;
+height: auto;
+width: 995px;
+grid-template-columns: 33% 33% 1fr;
+grid-template-rows: 50%;
+grid-template-areas:
+'cr1 cr2 cr3'
+'cr4 cr5 cr6'
+'cr7 cr8 cr9';
+
+.card1   {
+    grid-area: cr1;
+}
+.card2 {
+    grid-area: cr2;
+}
+.card3 {
+    grid-area: cr3;
+}
+.card4 {
+    grid-area: cr4;
+}
+.card5 {
+    grid-area: cr5;
+}
+.card6 {
+    grid-area: cr6;
+}
+.card7 {
+    grid-area: cr7;
+}
+.card8 {
+    grid-area: cr8;
+}
+.card9 {
+    grid-area: cr9;
+}
+
+}
+
+.blank{
+grid-area: bl;
+
+}
+
+
+.body_about {
+    background-color: #fff9e6;
+   
 }
